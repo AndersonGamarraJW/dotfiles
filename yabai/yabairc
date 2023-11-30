@@ -1,0 +1,34 @@
+yabai -m config layout bsp
+yabai -m config window_placement second_child
+
+#padding
+yabai -m config top_padding 8
+yabai -m config bottom_padding 8
+yabai -m config left_padding 8
+yabai -m config right_padding 8
+yabai -m config window_gap 8
+
+#mouse setting
+yabai -m config mouse_follows_focus on
+
+# modifier for clicking and dragging with mouse
+yabai -m config mouse_modifier alt
+# set modifier + left-click drag to move window
+yabai -m config mouse_action1 move
+# set modifier + right-click drag to resize window
+yabai -m config mouse_action2 resize
+
+yabai -m mouse_drop_action swap
+# Sketch commands custom
+yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
+yabai -m signal --add event=window_created action="sketchybar --trigger windows_on_spaces"
+yabai -m signal --add event=window_destroyed action="sketchybar --trigger windows_on_spaces"
+# Aplicaciones que no quieres que sean administras por yabai
+yabai -m rule --add app="^Ajustes del Sistema$" manage=off
+yabai -m rule --add app="^Calculadora$" manage=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off
+yabai -m rule --add app="^QuickTime Player$" manage=off
+yabai -m rule --add app="^Bitwarden$" manage=off
+yabai -m rule --add app="^Discord$" manage=off
+yabai -m rule --add app="^WhatsApp$" manage=off
+
