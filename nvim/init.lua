@@ -1,3 +1,5 @@
+local map = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
 vim.g.mapleader = " "
 vim.o.number = true
 vim.o.expandtab = true
@@ -21,3 +23,8 @@ require("lazy").setup({
 	{ import = "plugins.lsp" },
 })
 vim.cmd([[colorscheme catppuccin-mocha]])
+
+-- Barbar keymaps
+-- Move to previous/next
+map("n", "<C-,>", "<Cmd>BufferPrevious<CR>", opts)
+map("n", "<C-.>", "<Cmd>BufferNext<CR>", opts)
