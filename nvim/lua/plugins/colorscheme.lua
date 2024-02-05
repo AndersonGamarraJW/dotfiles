@@ -19,6 +19,12 @@ return {
 					scope_color = "lavender", -- catppuccin color (eg. `lavender`) Default: text
 					colored_indent_levels = true,
 				},
+				barbecue = {
+					dim_dirname = true, -- directory name is dimmed by default
+					bold_basename = true,
+					dim_context = false,
+					alt_background = false,
+				},
 			},
 			custom_highlights = function(C)
 				return {
