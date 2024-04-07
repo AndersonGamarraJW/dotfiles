@@ -115,7 +115,11 @@ return {
 			on_attach = on_attach,
 			cmd = { "jdtls" },
 		})
-
+		lspconfig["lemminx"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			single_file_support = true,
+		})
 		-- configure lua server (with special settings)
 		lspconfig["lua_ls"].setup({
 			capabilities = capabilities,

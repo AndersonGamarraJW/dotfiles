@@ -25,6 +25,7 @@ return {
 					dim_context = false,
 					alt_background = false,
 				},
+				barbar = true,
 			},
 			custom_highlights = function(C)
 				return {
