@@ -29,6 +29,7 @@ return {
 			},
 			filters = {
 				dotfiles = false,
+				git_ignored = false,
 			},
 		})
 		-- Nvim Web Icons Config
