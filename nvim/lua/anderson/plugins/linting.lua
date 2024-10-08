@@ -14,7 +14,7 @@ return {
 		}
 
 		lint.linters.pylint = {
-			args = {
+			cmd = {
 				"--disable",
 				"c0114,c0115,c0116,c0301,w1203,w0703",
 			},
