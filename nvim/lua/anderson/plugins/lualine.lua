@@ -52,7 +52,7 @@ return {
 		-- configure lualine with modified theme
 		lualine.setup({
 			options = {
-				theme = "rose-pine",
+				theme = "gruvbox-material",
 				-- theme = my_lualine_theme, -- Default theme
 			},
 			sections = {
