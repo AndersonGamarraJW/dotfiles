@@ -41,7 +41,7 @@ font_size 16.0
 
 #Style
 background_opacity 0.7
-background_blur 14
+background_blur 8
 window_padding_width 4
 draw_minimal_borders no
 term xterm-256color
@@ -58,6 +58,6 @@ map ctrl+l kitten pass_keys.py neighboring_window right  ctrl+l
 
 map cmd+n new_window_with_cwd
 # BEGIN_KITTY_THEME
-# Catppuccin-Mocha
+# Gruvbox Dark
 include current-theme.conf
 # END_KITTY_THEME
