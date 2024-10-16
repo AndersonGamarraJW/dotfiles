@@ -56,8 +56,8 @@ map ctrl+h kitten pass_keys.py neighboring_window left   ctrl+h
 map ctrl+l kitten pass_keys.py neighboring_window right  ctrl+l
 
 
-map cmd+n new_window_with_cwd
-# BEGIN_KITTY_THEME
+# map cmd+n new_window_with_cwd
+# begin_kitty_theme
 # Gruvbox Dark
 include current-theme.conf
 # END_KITTY_THEME
