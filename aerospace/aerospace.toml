@@ -85,7 +85,10 @@ outer.right =      18
 # alt-enter = 'exec-and-forget open -n /System/Applications/Utilities/Terminal.app'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
+
+# alt + -
 alt-slash = 'layout tiles horizontal vertical'
+# alt + ,
 alt-comma = 'layout accordion horizontal vertical'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
