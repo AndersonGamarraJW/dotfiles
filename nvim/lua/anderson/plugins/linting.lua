@@ -10,14 +10,7 @@ return {
 			javascriptreact = { "eslint_d" },
 			typescriptreact = { "eslint_d" },
 			svelte = { "eslint_d" },
-			python = { "pylint" },
-		}
-
-		lint.linters.pylint = {
-			cmd = {
-				"--disable",
-				"c0114,c0115,c0116,c0301,w1203,w0703",
-			},
+			python = { "ruff" },
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
