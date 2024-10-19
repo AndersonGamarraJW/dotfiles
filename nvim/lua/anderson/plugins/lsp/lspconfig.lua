@@ -58,9 +58,14 @@ return {
 		})
 		-- configure typescript server with plugin
 		-- lspconfig["tsserver"].setup({
-			-- capabilities = capabilities,
-			-- on_attach = on_attach,
+		-- capabilities = capabilities,
+		-- on_attach = on_attach,
 		-- })
+		lspconfig["ts_ls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			single_file_support = true,
+		})
 		-- configure css server
 		lspconfig["cssls"].setup({
 			capabilities = capabilities,
